@@ -53,3 +53,7 @@ def show_엄지(request):
 def show_은하(request):
     context = list(filter(lambda member: '은하' in member['name'], group['members']))[0]
     return render(request, '은하.html', context)
+
+def show_멤버(request, 멤버):
+    context = list(filter(lambda member: 멤버 in member['name'], group['members']))[0]
+    return render(request, '멤버.html', context=context)

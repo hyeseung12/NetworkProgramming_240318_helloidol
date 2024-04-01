@@ -1,12 +1,6 @@
-{% extends 'base.html' %}
+{% extends '멤버.html' %}
 {% load static %}
 
-{% block title %}
-{{ title }}
-{% endblock %}
-
 {% block content %}
-<h1>{{ group }}</h1>
-<h2>{{ name }}</h2>
-<img src="{% static '은하.jpeg' %}" style="border-radius: 50%;"/>
+    {% static '은하.jpeg' %}
 {% endblock %}
