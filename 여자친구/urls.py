@@ -1,5 +1,6 @@
 from django.urls import path
-
+from django.conf.urls.static import static
+from django.conf import settings
 from 여자친구 import views
 
 app_name = '여자친구'
@@ -13,3 +14,4 @@ urlpatterns = [
     path('은하/', views.show_은하, name='은하.html'),
 ]
 
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

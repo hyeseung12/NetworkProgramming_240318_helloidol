@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>예린</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
 <h1>{{ group }}</h1>
-<h2>{{ member }}</h2>
-<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F469%2F2022%2F05%2F04%2F0000673182_001_20220504092601865.jpg&type=a340" style="border-radius: 50%">
-</body>
-</html>
+<h2>{{ name }}</h2>
+<img src="{% static '예린.jpeg' %}" style="border-radius: 50%">
+{% endblock %}

@@ -45,6 +45,8 @@
       4. show_신비()
       5. show_엄지()
       6. show_은하()
+      7. -> templates에 context 전달
+      8. 정보를 하나로 묶고, 거기에서 꺼내오자
    2. templates/여자친구/
       1. 유주.html
          1. title: 여자친구 - 유주
