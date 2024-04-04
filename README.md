@@ -54,11 +54,14 @@
          3. h2: 유주
          4. img: 유주 프로필 사진
             1. border-radius: 50%
-      2. 소원.html
-      3. 예린.html
-      4. 신비.html
-      5. 엄지.html
-      6. 은하.html
+      2. ~~소원.html~~
+      3. ~~예린.html~~
+      4. ~~신비.html~~
+      5. ~~엄지.html~~
+      6. ~~은하.html~~
+      7. 멤버.html
+         1. group_name, name, img_src
+         2. `{% load static %} <img src="{% static img_src %}">`
    3. urls
       1. ~~여자친구/ -> 유주/ -> show_유주()~~
       2. ~~여자친구/ -> 소원/ -> show_소원()~~
@@ -67,3 +70,5 @@
       5. ~~여자친구/ -> 엄지/ -> show_엄지()~~
       6. ~~여자친구/ -> 은하/ -> show_은하()~~
       7. `여자친구/ -> <멤버>/ -> show_멤버(멤버)`
+   4. static/여자친구/images
+      1. 소원.jpeg, 신비.jpeg, 엄지.jpeg, 예린.jpeg, 유주.jpeg, 은하.jpeg
