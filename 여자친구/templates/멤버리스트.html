@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>여자친구 - 멤버리스트</title>
+</head>
+<body>
+{{ members }}
+<h1>{{ members.0.group }} - 멤버리스트</h1>
+<table border="1">
+    <tr>
+        <th>이름</th>
+        <th>프로필</th>
+    </tr>
+    {# members에서 하나씩 꺼내어 member에 넣자 #}
+
+    {% for member in members %}
+        <tr>
+{#            <td><a href="http://localhost:8000/여자친구/{{ member.name }}">{{ member.name }}</a></td>         인터넷 절대 #}
+{#            <td><a href="../{{ member.name }}">{{ member.name }}</a></td>         부모/부모/ 주소(상대) #}
+{#            <td><a href="/여자친구/{{ member.name }}">{{ member.name }}</a></td>      호스트 루트(호스트 절대) #}
+
+            <td><a href="{% url '여자친구:멤버' member.name %}">{{ member.name }}</a></td>
+            <td><img src={% get_static_prefix %}여자친구/images/{{ member.name }}.jpeg/></td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

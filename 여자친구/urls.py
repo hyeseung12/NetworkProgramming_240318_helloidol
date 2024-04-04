@@ -12,6 +12,7 @@ urlpatterns = [
     # path('신비/', views.show_신비, name='신비.html'),
     # path('엄지/', views.show_엄지, name='엄지.html'),
     # path('은하/', views.show_은하, name='은하.html'),
+    path('멤버리스트/', views.show_멤버리스트, name="멤버리스트"),
     path('<멤버>/', views.show_멤버, name='멤버'),
 ]
 

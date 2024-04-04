@@ -47,6 +47,9 @@
       6. show_은하()
       7. -> templates에 context 전달
       8. 정보를 하나로 묶고, 거기에서 꺼내오자
+      9. show_멤버()
+      10. image link -> image file(static)
+      11. show_멤버리스트()
    2. templates/여자친구/
       1. 유주.html
          1. title: 여자친구 - 유주
@@ -62,6 +65,7 @@
       7. 멤버.html
          1. group_name, name, img_src
          2. `{% load static %} <img src="{% static img_src %}">`
+      8. 멤버리스트.html
    3. urls
       1. ~~여자친구/ -> 유주/ -> show_유주()~~
       2. ~~여자친구/ -> 소원/ -> show_소원()~~
@@ -70,5 +74,6 @@
       5. ~~여자친구/ -> 엄지/ -> show_엄지()~~
       6. ~~여자친구/ -> 은하/ -> show_은하()~~
       7. `여자친구/ -> <멤버>/ -> show_멤버(멤버)`
+      8. 여자친구/ -> 멤버리스트/ -> show_멤버리스트()
    4. static/여자친구/images
       1. 소원.jpeg, 신비.jpeg, 엄지.jpeg, 예린.jpeg, 유주.jpeg, 은하.jpeg
