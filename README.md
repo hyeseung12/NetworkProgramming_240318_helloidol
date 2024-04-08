@@ -66,6 +66,8 @@
          1. group_name, name, img_src
          2. `{% load static %} <img src="{% static img_src %}">`
       8. 멤버리스트.html
+         1. {% url '앱이름:path이름' %}
+         2. {% url '앱이름:path이름' 변수=값 %}
    3. urls
       1. ~~여자친구/ -> 유주/ -> show_유주()~~
       2. ~~여자친구/ -> 소원/ -> show_소원()~~

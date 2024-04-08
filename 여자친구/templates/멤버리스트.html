@@ -22,7 +22,7 @@
 {#            <td><a href="../{{ member.name }}">{{ member.name }}</a></td>         부모/부모/ 주소(상대) #}
 {#            <td><a href="/여자친구/{{ member.name }}">{{ member.name }}</a></td>      호스트 루트(호스트 절대) #}
 
-            <td><a href="{% url '여자친구:멤버' member.name %}">{{ member.name }}</a></td>
+            <td><a href="{% url '여자친구:멤버' 멤버=member.name %}">{{ member.name }}</a></td>
             <td><img src={% get_static_prefix %}여자친구/images/{{ member.name }}.jpeg/></td>
         </tr>
     {% endfor %}
